@@ -25,25 +25,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = SpringBootMain.class)
 public class VMASBusinessImplTest {
 
-	@Autowired
-	VMASBusinessImpl vmasBusinessImpl;
-
-	@Autowired
-	@Qualifier("ConnectorController")
-	private ConnectorControllerImpl connectorControllerImpl;
-
-	@Autowired
-	@Qualifier("idsDeleteConnectorImpl")
-	private IdsDeleteConnectorImpl idsDeleteConnectorImpl;
-
-	@Autowired
-	@Qualifier("loadApplicationConfig")
-	private LoadApplicationConfig loadApplicationConfig;
-
-	VMASResponse vmasResponse;
-
-	AuditLog auditLog;
-	IdmRequestVO idmRequestVO;
 	String validTn;
 	String validCustGuid;
 	JSONObject obj = null;
